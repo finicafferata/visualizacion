@@ -1,1 +1,1 @@
-web: gunicorn dashboard_storytelling:app.server --bind 0.0.0.0:$PORT
+web: gunicorn dashboard_storytelling:server --bind 0.0.0.0:$PORT

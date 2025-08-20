@@ -144,6 +144,7 @@ for grupo in grupos_economicos_lista:
 
 # Inicializar aplicación
 app = dash.Dash(__name__, external_stylesheets=[dbc.themes.BOOTSTRAP])
+server = app.server  # Exponer el servidor Flask para Gunicorn
 
 # Layout principal con storytelling
 app.layout = dbc.Container([
